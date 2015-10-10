@@ -1,0 +1,74 @@
+<md-content>
+    <div class="md-padding" layout="row">
+        <br/>
+        <md-input-container>
+            <label>Perfil Usuario</label>
+            <md-select ng-model="profileCtrl.userProfile">
+                <md-option ng-repeat="profile in profileCtrl.profiles" value="{{profile.profile}}">{{profile.profile}}</md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+
+    <md-card>
+        <md-card-content>
+            <header>
+                <p class="md-title">DOCUMENTO</p>
+            </header>
+        </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around" class="md-title">
+                <p>Accion</p>
+                <p>Acceso</p>
+                <p>Operacion</p>
+            </div>
+            <md-divider></md-divider>
+        </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around">
+                <span>Crear</span>
+                <span>Permitido</span>
+                <md-switch aria-label="Switch 1" class="md-primary">
+            </div>
+            <md-divider></md-divider>
+        </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around">
+                <span>Buscar</span>
+                <span>Permitido</span>
+                <md-switch aria-label="Switch 1">
+            </div>
+
+        </md-card-content>
+    </md-card>
+    <md-card>
+        <md-card-content>
+            <header>
+                <p class="md-title">COMUNICADOS INTERNOS</p>
+            </header>
+        </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around" class="md-title">
+                <p>Accion</p>
+                <p>Acceso</p>
+                <p>Operacion</p>
+            </div>
+            <md-divider></md-divider>
+        </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around">
+                <span>Crear</span>
+                <span>Permitido</span>
+                <md-switch aria-label="Switch 1">
+            </div>
+            <md-divider></md-divider>
+        </md-card-content>
+        <md-card-content>
+            <div layout="row" flex layout-align="space-around">
+                <span>Buscar</span>
+                <span>Permitido</span>
+                <md-switch aria-label="Switch 1">
+            </div>
+
+        </md-card-content>
+    </md-card>
+</md-content>

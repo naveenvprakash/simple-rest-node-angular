@@ -1,0 +1,70 @@
+@import '../base/colors'
+
+md-sidenav
+  overflow: visible
+
+.border-bottom--sidemenu
+  background: $md-blue-grey-900
+
+.side-menu > li
+  border-top: 1px solid $md-blue-grey-900
+  background: $md-blue-grey-700
+
+.side-menu,
+.side-menu  ul
+    list-style: none
+    padding: 0
+    margin-top: 0
+    background: $md-blue-grey-500
+
+.side-menu menu-toggle span
+  padding-top: 12px
+  padding-bottom: 12px
+  color: white
+  font-weight: bold
+
+// arrow
+.side-menu
+  .md-button-toggle
+    .md-toggle-icon
+      background-size: 100% auto
+      display: inline-block
+      margin: auto 0 auto auto
+      width: 15px
+      color: $white
+      transition: transform .3s ease-in-out
+      -webkit-transition: -webkit-transform .3s ease-in-out
+
+// menu toggle button
+.side-menu
+  .md-button
+    border-radius: 0
+    color: inherit
+    cursor: pointer
+    font-weight: 400
+    line-height: 40px
+    margin: 0
+    max-height: 40px
+    overflow: hidden
+    padding: 0 16px
+    text-align: left
+    text-decoration: none
+    white-space: normal
+    width: 100%
+
+// rotate the arrows
+.md-button-toggle
+  .md-toggle-icon.toggled
+    transform: rotateZ(180deg)
+    -webkit-transform: rotateZ(180deg)
+
+.side-menu .menu-toggle-list .md-button
+  display: block
+  padding: 0 16px 0 32px
+  text-transform: none
+
+  &:hover
+    background: $md-blue-100
+
+.menu-toggle-list.ng-hide
+  max-height: 0

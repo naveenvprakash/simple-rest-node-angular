@@ -1,0 +1,38 @@
+@import "../base/colors"
+
+// vars for sidenav
+$l-sidenav--width: 245px
+$l-sidenav--min-width: 235px
+$l-sidenav--max-width: 235px
+
+// vars for Container
+$page-container-border: $light-bgColor
+$page-container-margin: 10px
+
+// vars for header list
+$page-header-margin: -16px
+$page-header-pad: 16px
+
+#main
+  overflow: auto
+
+.l-sidenav
+  width: $l-sidenav--width !important
+  min-width: $l-sidenav--min-width !important
+  max-width: $l-sidenav--max-width !important
+
+// use as background-color divider
+.l-content-background
+  background: $divider-color
+
+.l-page-container
+  border: $page-container-border
+  margin: $page-container-margin
+
+.l-page-header
+  border-bottom: $page-container-border
+  background: $md-blue-grey-500
+  margin: $page-header-margin
+  padding: $page-header-pad
+  color: $white
+

@@ -1,0 +1,41 @@
+<md-content ng-controller="CustomInputDemoCtrl as ctrl" layout="column" class="md-padding">
+    <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap md-require-match>
+        <md-autocomplete
+                md-selected-item="ctrl.selectedItem"
+                md-search-text="ctrl.searchText"
+                md-items="item in ctrl.querySearch(ctrl.searchText)"
+                md-item-text="item.name"
+                placeholder="Para: ">
+            <span md-highlight-text="ctrl.searchText">{{item.name}} :: {{item.type}}</span>
+        </md-autocomplete>
+        <md-chip-template>
+                    <span>
+                      <strong>{{$chip.name}}</strong>
+                    </span>
+        </md-chip-template>
+    </md-chips>
+    <br />
+    <md-checkbox
+            ng-model="data.cb2"
+            class="md-warn">
+        Con Copia
+    </md-checkbox>
+
+        <div layout layout-sm="column">
+            <md-input-container flex="50">
+                <label>Asunto</label>
+                <input>
+            </md-input-container>
+        </div>
+
+    <br/>
+    <h4>Adjuntar Documento</h4>
+    <input type="file">
+    <br/>
+    <br/>
+    <section layout="row" layout-sm="column" layout-align="start">
+        <md-button class="md-raised">Aceptar</md-button>
+        <md-button class="md-raised">Cancelar</md-button>
+    </section>
+
+</md-content>
