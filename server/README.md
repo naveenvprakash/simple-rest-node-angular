@@ -1,7 +1,7 @@
-# Beesoft Core Back-end
+# Node Back-end
 
 ### Instalar Dependencias del proyecto.
-use **npm** y **bower** para instalar las dependencias del proyecto.
+use **npm** para instalar las dependencias del proyecto.
 
 Ir al directorio server/app y ejecutar:
 
