@@ -9,7 +9,7 @@
             // application modules
             'beesoft-core.core',
             'beesoft-core.menu',
-            'beesoft-core.radication',
+            'beesoft-core.radication'
 
         ])
         .config(function($stateProvider, $urlRouterProvider) {
