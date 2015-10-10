@@ -1,4 +1,4 @@
-# Beesoft Core Front End
+# Angular Front End
 
 ### Instalar Dependencias del proyecto.
 use **npm** y **bower** para instalar las dependencias del proyecto.
@@ -21,76 +21,6 @@ use **gulp**  para hacer un build de los archivos javascripts , los modulos de t
 **start development mode :** <code>gulp gordis</code>
 
 
-# Convenciones Front End
-
-Proceso mediante el cual se implentara el desarrollo de software Front End  utilizando las siguientes tecnologias:
-- HTML5
-- CSS3
-- JAVASCRIPT
-
-
-### Workflow Front End
-
-Tecnologias usadas:
-
-  - AngularJS 1.4
-  - Angular Material 0.11
-  - Bootstrap
-  - SASS
-  - GULP
-  - NODEJS ( npm )
-  - BOWER
-  - GIT
-
-
-### Covension para la codificacion con AngularJs
-
-Actualmente nos basamos en esta guia de [John Papa] de la cual usamos los siguientes puntos.
-
-- Single Responsibility
-- IIFE
-- Modules
-- Controllers
-- Services
-- Factories
-- Data Services
-- Promises
-
-### Convensiones para nombrar los archivos
-
-Patron para nombrar archivos "caracteristica.tipo.js"
-
-Ejemplos
- - Nombre del Archivo : ( radicacion.controller.js | radicacion.factory.js )
- - Llamar los componentes registrados : ( RadicacionController )
-
-
-### UI-Router
-Enrutador de la aplicacion
-ver:
- - State
- - ui-sref
- - States anidados
-
-leer mas [ui-router]
-
-
-### Restangular
-Restangular sera el servicio que atendera todas las llamadas HTTP
-
-[Restangular Github]
-
-[Restangular Newsletter]
-
-###  Promesas
-
-Angular Docs:  [Angular $q]
-
-Manejo de Promsesas js: [Promises]
-
-##### JSON API Estatica
-
-En este caso crearemos un directorio API en el cual tendremos los modelo de datos estaticos [Archivos JSON], Estos JSON serviran de Endpoint para nuestros contradores restangularizados.
 
 ##### Unit Test Karma y Jasmine
 <br/>
@@ -133,15 +63,6 @@ cd to tests then Run:
 <code> protractor protractor.conf.js </code>
 
 
-
-
-##### Angular Mocks
-Se usara "Angular Mocks" para las pruebas unitarias sobre controladores ... [Leer mas]
-##### Ejemplo probar peticion Http en  controlador con karma-jasmine + ngMocks
-[$httpBackend]
-
-##### Filtros en Angular
-[Todo sobre Filtros AngularJs]
 
 [$http angular]:https://docs.angularjs.org/api/ng/service/$http
 [John Papa]:https://github.com/johnpapa/angular-styleguide
