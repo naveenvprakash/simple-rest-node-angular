@@ -1,4 +1,3 @@
-// Beesoft-Core--server-proto
 // Basic Setup
 var express      = require('express');
 var app          = express();
